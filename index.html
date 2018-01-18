@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Localization</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="./vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- PNotify -->
+    <link href="./vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="./vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="./vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="./vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="./vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="./vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/localize.css" />
+</head>
+<body class='nav-md'>
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-9 col-sm-9 col-xs-12 center-block" id="2048">
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="row tile_count">
+					<div class="col-md-6 col-sm-6 col-xs-6 tile_stats_count">
+		              <span class="count_top"><i class="fa fa-bell"></i>Nodes in G</span>
+		              <div class="count" id='NodesinGPoints'>0</div>
+		      </div>
+          <div class="col-md-6 col-sm-6 col-xs-6 tile_stats_count">
+                  <span class="count_top"><i class="fa fa-bell"></i>Selected Node</span>
+                  <div class="count" id='SelectedNode'>0</div>
+          </div>
+				</div>
+				<div class="mail_list row">
+                    <div class="left">
+                      <i class="fa fa-gamepad"></i>
+                    </div>
+                    <div class="right">
+                      <h3>Sequence of Moving <small id="stepsNum"></small></h3>
+                      <div id='movements' style='word-wrap: break-word; word-break: normal;'></div>
+                    </div>
+                </div>
+                <div class="mail_list row">
+                    <div class="left">
+                      <i class="fa fa-edit"></i>
+                    </div>
+                    <div class="right">
+                      <h3>Sequence of observations</h3>
+                      <div style='word-wrap: break-word; word-break: normal;'></div>
+                      <textarea class="form-control" id="observationsList" rows="3" placeholder='5,5,5'></textarea>
+                      <h3>Sequence of actions</h3>
+                      <div style='word-wrap: break-word; word-break: normal;'></div>
+                      <textarea class="form-control" id="actionsList" rows="3" placeholder='left,left'></textarea>
+                      <br>
+                      <button type="button" class="btn btn-round btn-submit right_col" id='Submit'>Submit</button>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="./vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="./vendors/moment/min/moment.min.js"></script>
+    <script src="./vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+     <!-- PNotify -->
+    <script src="./vendors/pnotify/dist/pnotify.js"></script>
+    <script src="./vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="./vendors/pnotify/dist/pnotify.nonblock.js"></script>
+    <!--Initial -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/localize.js"></script>
+	<script>
+        $(document).ready(function () {
+            $("#2048").initMaze();
+        });
+    </script>
+</body>
+</html>

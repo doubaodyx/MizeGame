@@ -1,0 +1,214 @@
+.holder2048 {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.holder2048>.container {
+    width: 524px;
+    height: 524px;
+    position: relative;
+    margin: 0 auto;
+    border-style: none;
+    border: 3px solid #BBADA0;
+    background-color: #CCC0B3;
+}
+
+
+.holder2048>.container>.box {
+    width: 14px;
+    height: 14px;
+    background-color: Black;
+    position: absolute;
+    color: #776E65;
+    font-size: x-small;
+    font-weight: bolder;
+    font-family: Arial;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.holder2048>.container>.box[levelValue='-13'] {
+    background: #00CCFF;
+    color: #FFFFFF;
+}
+
+.holder2048>.container>.box[levelValue='-1'] {
+    background: #000000;
+    color: #000000;
+}
+
+.holder2048>.container>.box[levelValue='0'] {
+    background: #FFFFFF
+}
+
+.holder2048>.container>.box[levelValue='2'] {
+    background-color: #FFF8D7
+}
+
+.holder2048>.container>.box[levelValue='4'] {
+    background-color: #FFED97
+}
+
+.holder2048>.container>.box[levelValue='8'] {
+    background-color: #FFBB77
+}
+
+.holder2048>.container>.box[levelValue='16'] {
+    background-color: #FF9224
+}
+
+.holder2048>.container>.box[levelValue='32'] {
+    background-color: #FF5809
+}
+
+.holder2048>.container>.box[levelValue='64'] {
+    background-color: #EA0000
+}
+
+.holder2048>.container>.box[levelValue='128'] {
+    background-color: #FFFF37
+}
+
+.holder2048>.container>.box[levelValue='256'] {
+    background-color: #F9F900
+}
+
+.holder2048>.container>.box[levelValue='512'] {
+    background-color: #E1E100
+}
+
+.holder2048>.container>.box[levelValue='1024'] {
+    background-color: #C4C400
+}
+
+.holder2048>.container>.box[levelValue='2048'] {
+    background-color: #9AFF02
+}
+
+.holder2048>.container>.box[levelValue='4096'] {
+    background-color: #00FFFF
+}
+
+.holder2048>.container>.box[levelValue='8192'] {
+    background-color: #FF00FF
+}
+
+.tile_count {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.tile_count .tile_stats_count {
+    border-bottom: 1px solid #D9DEE4;
+    padding: 0 10px 0 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative
+}
+@media (min-width: 992px) {
+    footer {
+        margin-left: 230px
+    }
+}
+@media (min-width: 992px) {
+    .tile_count .tile_stats_count {
+        margin-bottom: 10px;
+        border-bottom: 0;
+        padding-bottom: 10px
+    }
+}
+.tile_count .tile_stats_count:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 65px;
+    border-left: 2px solid #ADB2B5;
+    margin-top: 10px
+}
+@media (min-width: 992px) {
+    .tile_count .tile_stats_count:first-child:before {
+        border-left: 0
+    }
+}
+.tile_count .tile_stats_count .count {
+    font-size: 30px;
+    line-height: 47px;
+    font-weight: 600
+}
+@media (min-width: 768px) {
+    .tile_count .tile_stats_count .count {
+        font-size: 40px
+    }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+    .tile_count .tile_stats_count .count {
+        font-size: 30px
+    }
+}
+.tile_count .tile_stats_count span {
+    font-size: 12px
+}
+@media (min-width: 768px) {
+    .tile_count .tile_stats_count span {
+        font-size: 13px
+    }
+}
+.tile_count .tile_stats_count .count_bottom i {
+    width: 12px
+}
+
+.mail_list_column {
+    border-left: 1px solid #DBDBDB
+}
+.mail_view {
+    border-left: 1px solid #DBDBDB
+}
+.mail_list {
+    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 2px;
+    display: inline-block
+}
+.mail_list .left {
+    width: 5%;
+    float: left;
+    margin-right: 3%
+}
+.mail_list .right {
+    width: 90%;
+    float: left
+}
+.mail_list h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0 6px
+}
+.mail_list h3 small {
+    float: right;
+    color: #ADABAB;
+    font-size: 11px;
+    line-height: 20px
+}
+.mail_list .badge {
+    padding: 3px 6px;
+    font-size: 8px;
+    background: #BAB7B7
+}
+@media (max-width: 767px) {
+    .mail_list {
+        margin-bottom: 5px;
+        display: inline-block
+    }
+}
+.mail_heading h4 {
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 20px
+}
+.btn-submit{
+	background: #009999;
+	color: #FFFFFF
+}
